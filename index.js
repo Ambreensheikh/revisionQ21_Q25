@@ -1,83 +1,83 @@
-//making two objects
-let car = {
-    name: "Toyota Corolla",
-    price: 2000000
-};
-let motorBike = {
-    name: "Honda",
-    price: 90000
-};
-//console.log(`car name: ${car.name} ,car price: ${car.price}`);
-//console.log(`motorbike name: ${motorBike.name} ,motorbike price: ${motorBike.price}`);
-//Q22
-//Intentional error
-let startArray = ["chips", "candies", "chocolates"];
-//produce an index error
-console.log(startArray[4]);
-//correct the error
-console.log(startArray[2]);
-//Q_23
-//conditional tests
-//test no1: EQUALITY WITH STRING
-let Car = "Sabaru";
-console.log("is car == 'Sabaru'? I predict its true"); //true
-console.log(Car == "Sabaru");
-//test no2 : inequality with string
-console.log("is Car !== 'Sabaru' ? I predict its true"); //true
-console.log(Car !== "Sabaru");
-//test no 3: equality with string
-let van = "Toyota";
-console.log("is van == 'Toyota'? I predict its true"); //true
-console.log(van == "Toyota");
-//test no4: inequality with string
-console.log("is van !== 'Toyota'? I predict its false"); //false
-console.log(van !== 'Toyota');
-//test no5:equality with lowercase
-let Book = "The Journey";
-console.log("is Book.toLowerCase() == the Journey? Ipredict its true"); //true
-console.log(Book == "The Journey");
-//test no6: inequality with lowerCase
-console.log("is Book.toLowerCase() !== the Journey? Ipredict its false"); //false
-console.log(Book !== "The Journey");
-//test no7:numbers in equality
-let age = 25;
-console.log("is age === 25 ?I predict its true"); //true
-console.log(age === 25);
-//test no 8:inequality in numbers
-console.log("is age !== 25 ?I predict its false"); //false
-console.log(age !== 25);
-//test no 9: number is greater than
-console.log("is age > 30? I predict its false"); //true
-console.log(age > 30);
-//test no 10 less than or equal
-console.log("is age <= 25? I predict its true"); //true
-console.log(age <= 25);
-//test no 11: &&
-console.log("is age > 20 && age < 30   I predict its true"); //true
-console.log(age > 20 && age < 30);
-//TEST NO 12:|| LOGICAL 'OR' OPERATOR
-console.log("is age > 30 || age < 19  I predict its FALSE"); //FALSE
-console.log(age > 20 || age < 30);
-//Q_24
-//Test weather an item is in  an array
-let colors = ["red", "yellow", "pink", "blue"];
-console.log(colors.includes("red"));
-console.log(colors.includes("green")); //answer in boolean
-//Q_25
-//create a variable
+//Q26 as it is Q25
+//Q27 :alian colors
+//VERSION 1
 let alian_color = "green";
-//if alian color is green
 if (alian_color === "green") {
-    console.log("The player just earned 5 points for shooting the alian");
+    console.log("The player earned 5 points");
+}
+else if (alian_color === "Yellow") {
+    console.log("The player earned 10 points");
+}
+else if (alian_color === "Red") {
+    console.log("The player earned 15 points");
+}
+//if alian  color is Yellow print a message of 10 points
+//VERSION 2
+alian_color = "Yellow";
+if (alian_color === "green") {
+    console.log("The player earned 5 points");
+}
+else if (alian_color === "Yellow") {
+    console.log("The player earned 10 points");
+}
+else if (alian_color === "Red") {
+    console.log("The player earned 15 points");
+}
+//if alian  color is red print a message of 15 points
+alian_color = "Red";
+if (alian_color === "green") {
+    console.log("The player earned 5 points");
+}
+else if (alian_color === "Yellow") {
+    console.log("The player earned 10 points");
+}
+else if (alian_color === "Red") {
+    console.log("The player earned 15 points");
+}
+//Q28 : stages of life
+let age = 18; //set the value of variable age
+if (age < 2) {
+    console.log("Yhe person is a baby !"); //2 years old but less than 4
+}
+else if (age >= 2 && age < 4) {
+    console.log("The person is a toddler !"); //
+}
+else if (age >= 4 && age < 13) {
+    console.log("The person is a kid !");
+}
+else if (age >= 13 && age < 20) {
+    console.log("The person is a teenager !");
+}
+else if (age >= 20 && age < 65) {
+    console.log("The person is an adult !");
 }
 else {
-    console.log("The player just earned 10 points");
-    //if alian color is not green
-    if (alian_color === "Yellow") {
-        console.log("The player just earned 10 points for shooting the alian");
+    console.log("The person is an elder !");
+}
+;
+//Q29 : 
+let favFruits = ["Grapes", "Banana", "Mango"];
+if (favFruits.includes("Grapes")) {
+    console.log("I really like Grapes");
+}
+if (favFruits.includes("Mango")) {
+    console.log("I really like Mango");
+}
+if (favFruits.includes("Kiwi")) {
+    console.log("I really like Kiwi");
+}
+else {
+    console.log("I dont like Kiwi");
+}
+//Q 30 :make array of 5 user name
+let userName = ["Admin", "Ali", "Usman", "Mahad", "Hamza"];
+//write greeting statement
+for (let i = 0; i < userName.length; i++) {
+    if (userName[i] === "Admin") {
+        console.log(`Hello ${userName[i]} , would you like to check reports !`);
     }
     else {
-        console.log("The player just earned 5 points");
+        console.log(`Hello , ${userName[i]}thank you for logging in again !`);
     }
 }
 export {};
